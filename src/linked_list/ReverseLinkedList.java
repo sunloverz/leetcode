@@ -22,6 +22,13 @@ public class ReverseLinkedList {
     return head;
   }
 
+  private static ListNode reverse(ListNode head) {
+    if(head.next == null) return head;
+    ListNode node = reverse(head.next);
+    head.next.next = head;
+    return node;
+  }
+
   public static void main(String[] args) {
     ListNode node1 = new ListNode(1);
     ListNode node2 = new ListNode(2);
