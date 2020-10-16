@@ -10,7 +10,8 @@ public class MinimumNumberOfStepsToMakeTwoStringsAnagram {
       tArr[t.charAt(i) -'a']++;
     }
     for(int i=0;i<26;i++)
-      if(tArr[i] > sArr[i]) count += tArr[i] - sArr[i];
+      if(tArr[i] > sArr[i])
+        count += tArr[i] - sArr[i];
     return count;
   }
 }
