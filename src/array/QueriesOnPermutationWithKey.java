@@ -1,6 +1,6 @@
 package array;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class QueriesOnPermutationWithKey {
   public int[] processQueries(int[] queries, int m) {
